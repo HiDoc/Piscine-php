@@ -1,21 +1,29 @@
 #!/usr/bin/php
 <?php 
-if (count($argv) != 4)
-	echo "Incorrect Parameters\n";
-else
+if (count($argv) > 1)
 {
-	$num;
-	$arg = trim($argv[2]);
-	if ($arg == '+')
-		$num = $argv[1] + $argv[3];
-	if ($arg == '/')
-		$num = $argv[1] / $argv[3];
-	if ($arg == '*')
-		$num = $argv[1] * $argv[3];
-	if ($arg == '%')
-		$num = $argv[1] % $argv[3];
-	if ($arg == '-')
-		$num = $argv[1] - $argv[3];
-	echo $num . "\n";
+	$tab = $argv[1];
+	$matches;
+	$num = 0;
+	if (preg_match("/[\/\*-+%]/", $tab, $matches))
+	{
+		$arr = preg_split("/[\/\*-+%]/", $tab);
+		if (count($arr) == 2)
+		{	
+			if ($matches[0] == '+')
+				$num = $arr[0] + $arr[1];
+			else if ($matches[0] == '/')
+				$num = $arr[0] / $arr[1];
+			else if ($matches[0] == '*')
+				$num = $arr[0] * $arr[1];
+			else if ($matches[0] == '%')
+				$num = $arr[0] % $arr[1];
+			else if ($matches[0] == '-')
+				$num = $arr[0] - $arr[1];
+			else
+				exit; 
+		}
+		echo trim($num) . "\n";
+	}
 }
 ?>
