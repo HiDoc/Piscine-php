@@ -1,6 +1,6 @@
 #! /usr/bin/php
 <?php
 for ($i = 0; $i < 999; $i++)
-	echo "x";
+	echo "X";
 echo "\n";
 ?>
