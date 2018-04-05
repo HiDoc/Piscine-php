@@ -1,0 +1,87 @@
+
+html{
+  width: 59%;
+  height: 100%;
+  padding: 0 20%;
+}
+body
+{
+  width: 100%;
+  color: white;
+  font-family: Roboto;
+  background-image: url("http://www.trains-des-tsars.com/img/home_panorama/panorama_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  background-color: transparent;
+  color: white;
+}
+.header, .menu-deroulant {
+  width: 100%;
+  text-align: center;
+}
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 33%;
+}
+.menu {
+  background-color: rgb(61, 142, 185);
+}
+.intro {
+  width: 59%;
+  text-align: center;
+  position: absolute;
+  z-index: 0;
+  top :400px;
+  background-color: rgba(61, 142, 185, 0.5);
+}
+.intro > div {
+  margin-top: 45px;
+  width: 30%;
+  padding: 0 35%;
+}
+.intro-p3 {
+  margin-bottom: 45px;
+}
+ul {
+  padding: 5px;
+}
+ul li {
+  list-style: none;
+  padding: 15px 0;
+  border-top: 1px solid white;
+}
+ul li:last-child {
+  border-bottom: 1px solid white;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+.menu:hover > .hidden  {
+  display :inline-block;
+}
+li:hover > .hidden  {
+  display :inline-block;
+}
+.depth-2 {
+  position: absolute;
+  right: 17%;
+  top: 315px;
+  width: 220px;
+  background-color: #3d8db9;
+  z-index: 1;
+}
+.depth-3 {
+  position: absolute;
+    right: -209px;
+    bottom: -150px;
+    background-color: #3d8db9;
+    width: 200px;
+}

@@ -1,0 +1,106 @@
+html, body, table, tr {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+}
+table {
+  padding: 10px;
+  opacity: 0.7;
+}
+tr {
+  position: relative;
+  height: 60px;
+}
+td {
+  min-width: 5%;
+  max-width: 5%;
+  width: 5%;
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+.nbr {
+  font-size: 8px;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+}
+.atm {
+  position: absolute;
+  font-size: 8px;
+  top: 2px;
+  right: 2px;
+}
+.td-right {
+  right: 0;
+}
+tr > td:nth-child(-n+18) {
+  background-color: lightgrey;
+}
+tr > td:nth-child(-n+12) {
+  background-color: #FBC976;
+}
+tr > td:first-child {
+  background-color: white;
+}
+tr > td.color-non {
+  background-color: #C3C683;
+}
+tr > td:nth-child(2) {
+  background-color: #F4AF97;
+}
+tr > td:nth-child(17) {
+  background-color: #97AECF;
+}
+tr > td:nth-child(18) {
+  background-color: #F8C4B1;
+}
+tr > td.color-met {
+  background-color: #A2CC90;
+}
+body > table > tbody > tr:nth-child(9) > td,
+tbody > tr:nth-child(6) > td:nth-child(3) {
+  background-color: #F6E1D4;
+}
+body > table > tbody > tr:nth-child(10) > td,
+tbody > tr:nth-child(7) > td:nth-child(3) {
+  background-color: #F4D2D3;
+}
+body > table > tbody > tr > td.empty {
+  border: 0;
+  background-color: transparent;
+}
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  td {
+    font-size: 1em;
+  }
+  .nbr {
+    font-size: 6px;
+  }
+  .atm {
+    font-size: 6px;
+  }
+}
+@media screen and (max-width: 560px) {
+  td {
+    font-size: 10px;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+  .nbr {
+    font-size: 6px;
+  }
+  .atm {
+    font-size: 6px;
+  }
+}

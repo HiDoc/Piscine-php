@@ -1,0 +1,15 @@
+<- Vertex ---------------------------------------------------------------------
+The Vertex class handles a single representation of a vertex.
+
+An instance can be contructed from three float 'x', 'y', 'z':
+new Color( array( 'x' => 1.0, 'y' => 0.0, 'z' = 5.5 ) );
+
+You can add a homogeneous coordinate as 'w' which is by default 1.0
+Also you can add a color to your vertex as 'color' from a class named Color
+Any other use is undefined behaviour.
+
+You can access data by using magic method get and set, using as a key name
+the coordinate.
+$object->__get('x');
+$object->__set('y', $value);
+--------------------------------------------------------------------- Vertex ->
